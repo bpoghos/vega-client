@@ -10,21 +10,35 @@
     width: 100px;
 }
 
-a {
+.dropdown button {
+    color: #000;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 8px;
+}
+
+.dropdown button:hover {
+    color: #FE7D05;
+}
+
+
+.navBar a {
     text-decoration: none;
     margin-right: 40px;
     color: #000;
     transition: ease 0.3s;
 }
 
-.links:hover {
+.navBar a:hover {
     color: #FE7D05;
 }
 
-.projects a:hover {
-    color: #FE7D05;
-}
 
+
+.navDropdownItem {
+    border-radius: 5px;
+    font-size: 20px;
+}
 
 
 .languageBtn {
@@ -40,14 +54,17 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    border: 1px solid #b6b6b6;
 }
 
 .languageDropdown {
-    width: 40px;
+    width: 32px;
     height: 80px;
-    background-color: #FE7D05;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 5px;
     position: absolute;
     top: 40px;
-    left: -4px;
+    left: 0px;
 }
