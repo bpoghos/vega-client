@@ -29,8 +29,13 @@ const Header: React.FC = () => {
         };
     }, []);
 
+    const scrollStyle = {
+        backgroundColor: isScrolled ? "white" : "transparent"
+    };
+
+
     return (
-        <Navbar variant="light" bg={isScrolled ? "white" : "transparent"} expand="lg" className={styles.navBar} fixed="top">
+        <Navbar variant="light" style={scrollStyle} expand="lg" className={styles.navBar} fixed="top">
             <Container>
                 <Navbar.Brand href="#home">
                     <img className={styles.logo} src={logo} alt="logo" />
@@ -43,7 +48,7 @@ const Header: React.FC = () => {
                             <DropdownToggle variant="link" className={styles.dropdownToggle}>
                                 {HeaderContent.PROJECTS}
                             </DropdownToggle>
-                            <DropdownMenu className={styles.dropdownMenu} style={isScrolled ? { backgroundColor: "#fff" } : { backgroundColor: "transparent" }}>
+                            <DropdownMenu className={styles.dropdownMenu} style={scrollStyle}>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.RESIDENTAL}</Dropdown.Item>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.PUBLIC}</Dropdown.Item>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.URBAN}</Dropdown.Item>
@@ -55,7 +60,7 @@ const Header: React.FC = () => {
                         <Nav.Link href="#" className={styles.navLink}>{HeaderContent.CONTACTS}</Nav.Link>
                         <div className={styles.languageBtn} onClick={handleLanguageClick}>
                             <img alt="" src={englishLng} />
-                            {isLanguageOpen && <div className={styles.languageDropdown} style={isScrolled ? { backgroundColor: "#fff" } : { backgroundColor: "transparent" }}>
+                            {isLanguageOpen && <div className={styles.languageDropdown} style={scrollStyle}>
                                 <div><img alt="" src={armenianLng} /></div>
                                 <div><img alt="" src={russianLng} /></div>
                             </div>}

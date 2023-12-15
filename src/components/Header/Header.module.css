@@ -1,5 +1,4 @@
 .navBar {
-    padding: 20px;
     background-color: rgba(234, 234, 234, 0);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -32,21 +31,47 @@
 
 .dropdown .dropdownMenu {
     box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17);
-    border: none;
+    border: 1px solid #b6b6b6;
     border-radius: 0 0 5px 5px;
     padding: 10px;
+    animation-name: exemple;
+    animation-duration: 1s;
 }
+
+@keyframes exemple {
+    0% {
+        top: 75px;
+        height: 0
+    }
+
+    100% {
+        top: 75px;
+        height: 230px;
+    }
+}
+
 
 .dropdownMenu .dropdownItem {
     font-size: 18px;
     transition: all 0.3s;
+    animation-name: items;
+    animation-duration: 4s;
+}
+
+@keyframes items {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .dropdownMenu .dropdownItem:hover {
     color: #FE7D05;
     background-color: transparent;
 }
-
 
 
 .navBar .navLink {
@@ -82,11 +107,16 @@
     border: 1px solid #b6b6b6;
 }
 
+
+
+
+
 .languageDropdown {
     width: 40px;
     height: 90px;
     padding: 4px;
     display: flex;
+    border: 1px solid #b6b6b6;
     background-color: #fff;
     box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17);
     flex-direction: column;
@@ -95,4 +125,19 @@
     position: absolute;
     top: 72px;
     left: -4px;
+    animation-name: language;
+    animation-duration: 1s;
+}
+
+@keyframes language {
+    0% {
+        top: 72px;
+        height: 0
+    }
+
+    100% {
+        top: 72px;
+        height: 90px;
+    }
+
 }
