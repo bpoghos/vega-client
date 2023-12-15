@@ -1,3 +1,4 @@
+import RootRouter from "../../routes/RootRouter";
 import Header from "../Header";
 
 
@@ -8,6 +9,7 @@ const App = () => {
     return (
         <div>
             <Header />
+            <RootRouter />
         </div>
     )
 }
