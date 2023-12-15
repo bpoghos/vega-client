@@ -5,19 +5,32 @@ import englishLng from './images/english.language.jpeg'
 import armenianLng from './images/armenian.language.png'
 import russianLng from './images/russian.language.webp'
 import { Container, Dropdown, DropdownMenu, DropdownToggle, Nav, Navbar } from "react-bootstrap"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 
 const Header: React.FC = () => {
     const [isLanguageOpen, setIsLanguageOpen] = useState<boolean>(false);
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
     const handleLanguageClick = () => {
         setIsLanguageOpen((prevState) => !prevState);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsScrolled(scrollPosition > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <Navbar variant="light" bg="transition" expand="lg" className={styles.navBar} fixed="top">
+        <Navbar variant="light" bg={isScrolled ? "white" : "transparent"} expand="lg" className={styles.navBar} fixed="top">
             <Container>
                 <Navbar.Brand href="#home">
                     <img className={styles.logo} src={logo} alt="logo" />
@@ -30,7 +43,7 @@ const Header: React.FC = () => {
                             <DropdownToggle variant="link" className={styles.dropdownToggle}>
                                 {HeaderContent.PROJECTS}
                             </DropdownToggle>
-                            <DropdownMenu className={styles.dropdownMenu}>
+                            <DropdownMenu className={styles.dropdownMenu} style={isScrolled ? { backgroundColor: "#fff" } : { backgroundColor: "transparent" }}>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.RESIDENTAL}</Dropdown.Item>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.PUBLIC}</Dropdown.Item>
                                 <Dropdown.Item href="/category" className={styles.dropdownItem}>{CategoryName.URBAN}</Dropdown.Item>
@@ -42,7 +55,7 @@ const Header: React.FC = () => {
                         <Nav.Link href="#" className={styles.navLink}>{HeaderContent.CONTACTS}</Nav.Link>
                         <div className={styles.languageBtn} onClick={handleLanguageClick}>
                             <img alt="" src={englishLng} />
-                            {isLanguageOpen && <div className={styles.languageDropdown}>
+                            {isLanguageOpen && <div className={styles.languageDropdown} style={isScrolled ? { backgroundColor: "#fff" } : { backgroundColor: "transparent" }}>
                                 <div><img alt="" src={armenianLng} /></div>
                                 <div><img alt="" src={russianLng} /></div>
                             </div>}

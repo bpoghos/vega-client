@@ -28,6 +28,8 @@
     top: 75px;
 }
 
+
+
 .dropdown .dropdownMenu {
     box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17);
     border: none;
@@ -42,7 +44,7 @@
 
 .dropdownMenu .dropdownItem:hover {
     color: #FE7D05;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 
@@ -89,8 +91,8 @@
     box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17);
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     position: absolute;
-    top: 40px;
+    top: 72px;
     left: -4px;
 }
