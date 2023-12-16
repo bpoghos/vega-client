@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
             <h2>{TestimonialsContent.TITLE}</h2>
             <p>{TestimonialsContent.DESCRIPTION}</p>
             <Container>
-                <Carousel indicators={false} interval={5000} wrap={true}>
+                <Carousel interval={5000} wrap={true} className={styles.test}>
                     <Carousel.Item>
                         <div className={styles.card}>
                             <img alt="avatar" src="https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png" />
