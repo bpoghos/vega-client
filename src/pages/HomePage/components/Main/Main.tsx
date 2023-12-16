@@ -7,7 +7,7 @@ const Main: React.FC = () => {
             <div className={styles.overlay}>
                 <h1>VEGA PROJECT</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididuntut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                <Button>About us</Button>
+                <Button variant="outline-dark">About us</Button>
             </div>
             <img
                 alt="background"
