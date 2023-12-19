@@ -1,5 +1,5 @@
-import styles from "./HomePage.module.css"
 import { LastProjects, Main, OurClients, Testimonials } from "./components"
+import styles from "./HomePage.module.css"
 
 
 const HomePage: React.FC = () => {

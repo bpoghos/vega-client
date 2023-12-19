@@ -3,6 +3,21 @@ export enum HeaderContent {
     PROJECTS = "PROJECTS",
     CONTACTS = "CONTACTS"
 }
+
+export enum FooterContent {
+    HOME = "HOME",
+    PROJECTS = "PROJECTS",
+    CONTACTS = "CONTACTS",
+    ABOUT = "ABOUT US",
+    RESIDENTAL = "Residential Structures",
+    PUBLIC = "Public Structures",
+    URBAN = "Urban Development Projects",
+    PRODACTION = "Production Buildings",
+    RECONSTRACTION = "Reconstruction",
+    SMALL = "Small Architectural Forms",
+    DEVELOPED = "Developed by SkillsUp Technologies",
+    DATE = "2023"
+}
 export enum CategoryName {
     RESIDENTAL = "Residential Structures",
     PUBLIC = "Public Structures",
@@ -25,4 +40,10 @@ export enum TestimonialsContent {
     TITLE = "Testimonials",
     DESCRIPTION = "What clients are say"
 
+}
+
+export enum ContactContent {
+    ADDRESS = "Address:",
+    MOBILE = "Mobile:",
+    EMAIL = "Email:"
 }
