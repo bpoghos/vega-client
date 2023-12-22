@@ -3,10 +3,13 @@
     text-align: center;
 }
 
-.card {
-    margin-top: 24px;
-    background-color: #ccc;
-    height: 300px;
+.container button {
+    margin-top: 40px;
+    padding: 20px 60px;
     border-radius: 5px;
-    cursor: pointer;
+    border: none;
+}
+
+.container button:hover {
+    background-color: #FE7D05;
 }
