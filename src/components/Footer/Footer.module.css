@@ -5,9 +5,13 @@
     padding-bottom: 0 !important;
 }
 
-.testing {
+.row {
     padding-bottom: 30px;
     border-bottom: 1px solid #fff;
+}
+
+.row a:hover {
+    color: #FE7D05;
 }
 
 .footer h3 {
@@ -29,5 +33,19 @@
 .copyrightContainer {
     padding: 10px;
     color: #7f7f7f;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.copyrightContainer p {
+    margin: 0;
+}
+
+.copyrightContainer a {
+    margin: 0 5px;
+    color: #7ECDB6;
+}
+
+.copyrightContainer a:hover {
+    color: #152CB6;
 }

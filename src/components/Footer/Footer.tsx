@@ -10,15 +10,15 @@ const Footer: React.FC = () => {
     return (
         <Navbar bg="black" variant="dark" className={styles.footer}>
             <Container className="d-block">
-                <Row className={styles.testing}>
-                    <Col lg={3} className={styles.logoContainer}>
+                <Row className={styles.row}>
+                    <Col lg={3} md={3} sm={6} xs={12} className={styles.logoContainer}>
                         <img src={logo} alt="Company Logo" className={styles.logo} />
                     </Col>
-                    <Col lg={3} className={styles.menuContainer}>
+                    <Col lg={3} md={3} sm={6} xs={12} className={styles.menuContainer}>
                         <NavLink>{FooterContent.HOME}</NavLink>
                         <NavLink>{FooterContent.ABOUT}</NavLink>
                     </Col>
-                    <Col lg={3} className={styles.projectsContainer}>
+                    <Col lg={3} md={3} sm={6} xs={12} className={styles.projectsContainer}>
                         <h3>{FooterContent.PROJECTS}</h3>
                         <NavLink>{FooterContent.RESIDENTAL}</NavLink>
                         <NavLink>{FooterContent.PUBLIC}</NavLink>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                         <NavLink>{FooterContent.RECONSTRACTION}</NavLink>
                         <NavLink>{FooterContent.SMALL}</NavLink>
                     </Col>
-                    <Col lg={3} className={styles.contactContainer}>
+                    <Col lg={3} md={3} sm={6} xs={12} className={styles.contactContainer}>
                         <h3>{FooterContent.CONTACTS}</h3>
                         <p>{ContactContent.ADDRESS} Manandyan 22</p>
                         <p>{ContactContent.MOBILE} (010) 422 690</p>
@@ -35,7 +35,9 @@ const Footer: React.FC = () => {
                     </Col>
                 </Row>
                 <div className={styles.copyrightContainer}>
-                    <span>{FooterContent.DEVELOPED} &copy; {FooterContent.DATE}</span>
+                    <p>{FooterContent.DEVELOPED}</p>
+                    <NavLink href="http://www.scillsup.tech"> SkillsUp Technologies</NavLink>
+                    <p> &copy; {FooterContent.DATE}</p>
                 </div>
             </Container>
         </Navbar>

@@ -15,7 +15,7 @@ export enum FooterContent {
     PRODACTION = "Production Buildings",
     RECONSTRACTION = "Reconstruction",
     SMALL = "Small Architectural Forms",
-    DEVELOPED = "Developed by SkillsUp Technologies",
+    DEVELOPED = "Developed by",
     DATE = "2023"
 }
 export enum CategoryName {

@@ -19,8 +19,8 @@
     margin-left: 20px;
     padding: 10px;
     height: 100px;
-    background-color: #fff;
-    box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17);
+    /* background-color: #fff;
+    box-shadow: 1px 1px 7px 0px rgba(34, 60, 80, 0.17); */
     border-radius: 5px;
     display: flex;
     justify-content: center;

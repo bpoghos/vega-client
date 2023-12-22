@@ -35,7 +35,7 @@
     border-radius: 0 0 5px 5px;
     padding: 10px;
     animation-name: exemple;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
 }
 
 @keyframes exemple {
@@ -55,7 +55,7 @@
     font-size: 18px;
     transition: all 0.3s;
     animation-name: items;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 @keyframes items {
@@ -126,7 +126,7 @@
     top: 72px;
     left: -4px;
     animation-name: language;
-    animation-duration: 1s;
+    animation-duration: 0.3s;
 }
 
 @keyframes language {

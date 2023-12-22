@@ -1,9 +1,11 @@
-
+import styles from "./CategoryPage.module.css"
+import { Cards, Content } from "./components"
 
 const CategoryPage: React.FC = () => {
     return (
-        <div>
-            <h1>CategoryPage</h1>
+        <div className={styles.category}>
+            <Content />
+            <Cards />
         </div>
     )
 }

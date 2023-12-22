@@ -1,0 +1,12 @@
+.container {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.card {
+    margin-top: 24px;
+    background-color: #ccc;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
